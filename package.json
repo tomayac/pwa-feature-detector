@@ -3,10 +3,10 @@
   "version": "1.0.0",
   "description": "Progressive Web App 🕵️ Feature Detector",
   "scripts": {
-    "build:img": "mkdir -p dist && imagemin img/* --out-dir=dist",
-    "build:html": "mkdir -p dist && html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css 1 -o dist/index.html src/index.html",
-    "build:js": "mkdir -p dist && minify src/main.js --out-file dist/main.min.js && minify src/sw.js --out-file dist/sw.min.js",
-    "build:all": "npm run build:img && npm run build:html && npm run build:js && cp src/manifest.webmanifest dist/manifest.webmanifest"
+    "build:img": "mkdir -p docs && imagemin img/* --out-dir=docs",
+    "build:html": "mkdir -p docs && html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css 1 -o docs/index.html src/index.html",
+    "build:js": "mkdir -p docs && minify src/main.js --out-file docs/main.min.js && minify src/sw.js --out-file docs/sw.min.js",
+    "build:all": "npm run build:img && npm run build:html && npm run build:js && cp src/manifest.webmanifest docs/manifest.webmanifest"
   },
   "repository": {
     "type": "git",
