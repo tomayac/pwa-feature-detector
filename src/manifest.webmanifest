@@ -1,0 +1,20 @@
+{
+  "dir": "ltr",
+  "lang": "en",
+  "name": "\uD83D\uDD75\uFE0F\u200D\u2640\uFE0F Progressive Web App Feature Detector",
+  "short_name": "\uD83D\uDD75\uFE0F\u200D\u2640\uFE0F PWA Detector",
+  "description": "A Progressive Web App that detects what Progressive Web App features a given browser supports.",
+  "scope": "/",
+  "icons": [
+    {
+      "src": "icon_120x120.png",
+      "sizes": "120x120",
+      "type": "image/png"
+    }
+  ],
+  "display": "browser",
+  "orientation":  "portrait-primary",
+  "start_url": "/?a2hs=true",
+  "theme_color": "#ffd700",
+  "background_color": "#ff8032"
+}

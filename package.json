@@ -1,0 +1,26 @@
+{
+  "name": "pwa-feature-detector",
+  "version": "1.0.0",
+  "description": "Progressive Web App 🕵️ Feature Detector",
+  "scripts": {
+    "build:img": "mkdir -p dist && imagemin img/* --out-dir=dist",
+    "build:html": "mkdir -p dist && html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css 1 -o dist/index.html src/index.html",
+    "build:js": "mkdir -p dist && minify src/main.js --out-file dist/main.min.js && minify src/sw.js --out-file dist/sw.min.js",
+    "build:all": "npm run build:img && npm run build:html && npm run build:js && cp src/manifest.webmanifest dist/manifest.webmanifest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tomayac/pwa-feature-detector.git"
+  },
+  "author": "Thomas Steiner <steiner.thomas@gmail.com> (http://blog.tomayac.com/)",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/tomayac/pwa-feature-detector/issues"
+  },
+  "homepage": "https://github.com/tomayac/pwa-feature-detector#readme",
+  "devDependencies": {
+    "babel-minify": "^0.2.0",
+    "html-minifier": "^3.5.7",
+    "imagemin-cli": "^3.0.0"
+  }
+}
