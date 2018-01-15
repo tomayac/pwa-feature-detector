@@ -6,7 +6,7 @@
       'Add to Home Screen': 'BeforeInstallPromptEvent' in win,
       'Background Sync': 'sync' in registration,
       'Navigation Preload': 'navigationPreload' in registration,
-      'Budget API': 'budget' in nav && 'reserve' in nav.budget,
+      'Silent Push': 'budget' in nav && 'reserve' in nav.budget,
       'Storage Estimation': 'storage' in nav && 'estimate' in nav.storage,
       'Persistent Storage': 'storage' in nav && 'persist' in nav.storage,
       'Web Share': 'share' in nav,
@@ -47,6 +47,6 @@
         });
       }
       updateUserInterface({'Service Workers Not Supported': false});
-    }, 1000);
+    }, 500);
   });
 })(window, document, navigator);
