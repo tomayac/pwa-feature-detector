@@ -3,7 +3,8 @@
     return {
       'Offline Capabilities': 'caches' in win,
       'Push Notifications': 'pushManager' in registration,
-      'Add to Home Screen': 'BeforeInstallPromptEvent' in win,
+      'Add to Home Screen': document.createElement('link').relList.supports(
+          'manifest'),
       'Background Sync': 'sync' in registration,
       'Navigation Preload': 'navigationPreload' in registration,
       'Silent Push': 'budget' in nav && 'reserve' in nav.budget,
