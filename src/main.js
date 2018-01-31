@@ -4,7 +4,7 @@
       'Offline Capabilities': 'caches' in win,
       'Push Notifications': 'pushManager' in registration,
       'Add to Home Screen': doc.createElement('link').relList.supports(
-          'manifest'),
+          'manifest') && 'onbeforeinstallprompt' in win,
       'Background Sync': 'sync' in registration,
       'Navigation Preload': 'navigationPreload' in registration,
       'Silent Push': 'budget' in nav && 'reserve' in nav.budget,

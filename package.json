@@ -20,7 +20,7 @@
   },
   "homepage": "https://github.com/tomayac/pwa-feature-detector#readme",
   "devDependencies": {
-    "babel-minify": "^0.2.0",
+    "babel-minify": "^0.3.0",
     "eslint": "^4.16.0",
     "eslint-config-google": "^0.9.1",
     "html-minifier": "^3.5.8",
