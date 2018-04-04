@@ -16,7 +16,9 @@
       'Device Memory': 'deviceMemory' in nav,
       'Getting Installed Related Apps': 'getInstalledRelatedApps' in nav,
       'Payment Request': 'PaymentRequest' in win,
-      'Credential Management': 'credentials' in nav,
+      'Credential Management': 'credentials' in nav &&
+          'preventSilentAccess' in nav.credentials &&
+          ('PasswordCredential' in win || 'FederatedCredential' in win),
     };
   };
 
