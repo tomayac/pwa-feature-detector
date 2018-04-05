@@ -32,7 +32,7 @@
         continue;
       }
       featureCell.textContent = feature;
-      supportCell.textContent = pwaFeatures[feature] ? '✅' : '❌';
+      supportCell.textContent = pwaFeatures[feature] ? '✔' : '❌';
       fragment.appendChild(doc.importNode(featureRow.content, true));
     }
     const placeholder = doc.getElementById('placeholder');
