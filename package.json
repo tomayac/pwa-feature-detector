@@ -1,11 +1,11 @@
 {
   "name": "pwa-feature-detector",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "description": "Progressive Web App 🕵️ Feature Detector",
   "scripts": {
     "lint": "eslint src/ --fix",
     "build:img": "mkdir -p docs && imagemin img/* --out-dir=docs",
-    "build:html": "mkdir -p docs && html-minifier --collapse-boolean-attributes --collapse-inline-tag-whitespace --collapse-whitespace --minify-css 1 -o docs/index.html src/index.html",
+    "build:html": "mkdir -p docs && html-minifier --collapse-boolean-attributes --collapse-whitespace --minify-css --custom-attr-collapse /on/ --remove-attribute-quotes --process-scripts application/json --sort-attributes --sort-class-name --minify-urls -o docs/index.html src/index.html",
     "build:js": "mkdir -p docs && minify src/main.js --out-file docs/main.min.js && minify src/sw.js --out-file docs/sw.min.js",
     "build:all": "rm -rf docs && npm run build:img && npm run build:html && npm run build:js && cp src/manifest.webmanifest docs/manifest.webmanifest"
   },
@@ -21,9 +21,9 @@
   "homepage": "https://github.com/tomayac/pwa-feature-detector#readme",
   "devDependencies": {
     "babel-minify": "^0.4.3",
-    "eslint": "^4.19.1",
+    "eslint": "^5.0.1",
     "eslint-config-google": "^0.9.1",
-    "html-minifier": "^3.5.16",
+    "html-minifier": "^3.5.17",
     "imagemin-cli": "^3.0.0"
   },
   "eslintConfig": {
