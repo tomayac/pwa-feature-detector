@@ -21,9 +21,9 @@
   "homepage": "https://github.com/tomayac/pwa-feature-detector#readme",
   "devDependencies": {
     "babel-minify": "^0.4.3",
-    "eslint": "^5.0.1",
+    "eslint": "^5.1.0",
     "eslint-config-google": "^0.9.1",
-    "html-minifier": "^3.5.17",
+    "html-minifier": "^3.5.19",
     "imagemin-cli": "^3.0.0"
   },
   "eslintConfig": {
