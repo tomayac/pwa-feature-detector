@@ -7,6 +7,7 @@
           doc.createElement('link').relList.supports('manifest') &&
           'onbeforeinstallprompt' in win,
       'Background Sync': 'sync' in registration,
+      'Periodic Background Sync': 'periodicSync' in registration,
       'Navigation Preload': 'navigationPreload' in registration,
       'Silent Push': 'budget' in nav && 'reserve' in nav.budget,
       'Storage Estimation': 'storage' in nav && 'estimate' in nav.storage,
@@ -34,7 +35,7 @@
         continue;
       }
       featureCell.textContent = feature;
-      supportCell.textContent = pwaFeatures[feature] ? '✔' : '❌';
+      supportCell.textContent = pwaFeatures[feature] ? '✅' : '❌';
       fragment.appendChild(doc.importNode(featureRow.content, true));
     }
     const placeholder = doc.getElementById('placeholder');
