@@ -1,6 +1,6 @@
 {
   "name": "pwa-feature-detector",
-  "version": "1.0.8",
+  "version": "1.0.9",
   "description": "Progressive Web App 🕵️ Feature Detector",
   "scripts": {
     "lint": "eslint src/ --fix",
@@ -20,11 +20,11 @@
   },
   "homepage": "https://github.com/tomayac/pwa-feature-detector#readme",
   "devDependencies": {
-    "babel-minify": "^0.4.3",
-    "eslint": "^5.1.0",
-    "eslint-config-google": "^0.9.1",
-    "html-minifier": "^3.5.19",
-    "imagemin-cli": "^3.0.0"
+    "babel-minify": "^0.5.0",
+    "eslint": "^6.1.0",
+    "eslint-config-google": "^0.13.0",
+    "html-minifier": "^4.0.0",
+    "imagemin-cli": "^5.0.0"
   },
   "eslintConfig": {
     "parserOptions": {

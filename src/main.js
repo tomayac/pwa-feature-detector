@@ -30,7 +30,7 @@
     const featureRow = doc.getElementById('featureRow');
     const featureCell = featureRow.content.querySelector('.feature');
     const supportCell = featureRow.content.querySelector('.support');
-    for (let feature in pwaFeatures) {
+    for (const feature in pwaFeatures) {
       if (!pwaFeatures.hasOwnProperty(feature)) {
         continue;
       }
@@ -47,10 +47,10 @@
     win.setTimeout(() => {
       if ('serviceWorker' in nav) {
         return nav.serviceWorker.register('sw.min.js')
-        .then((registration) => {
-          const pwaFeatures = detectFeatures(registration);
-          updateUserInterface(pwaFeatures);
-        });
+            .then((registration) => {
+              const pwaFeatures = detectFeatures(registration);
+              updateUserInterface(pwaFeatures);
+            });
       }
       updateUserInterface({'Service Workers Not Supported': false});
     }, 500);
