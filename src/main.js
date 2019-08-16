@@ -9,7 +9,6 @@
       'Background Sync': 'sync' in registration,
       'Periodic Background Sync': 'periodicSync' in registration,
       'Navigation Preload': 'navigationPreload' in registration,
-      'Silent Push': 'budget' in nav && 'reserve' in nav.budget,
       'Storage Estimation': 'storage' in nav && 'estimate' in nav.storage,
       'Persistent Storage': 'storage' in nav && 'persist' in nav.storage,
       'Web Share': 'share' in nav,
