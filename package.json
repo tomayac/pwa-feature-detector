@@ -1,6 +1,6 @@
 {
   "name": "pwa-feature-detector",
-  "version": "1.0.9",
+  "version": "1.0.10",
   "description": "Progressive Web App 🕵️ Feature Detector",
   "scripts": {
     "lint": "eslint src/ --fix",
