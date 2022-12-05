@@ -24,7 +24,7 @@
     "eslint": "^6.1.0",
     "eslint-config-google": "^0.13.0",
     "html-minifier": "^4.0.0",
-    "imagemin-cli": "^5.0.0"
+    "imagemin-cli": "^7.0.0"
   },
   "eslintConfig": {
     "parserOptions": {
